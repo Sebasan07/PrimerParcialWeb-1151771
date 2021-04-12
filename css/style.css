@@ -1,0 +1,67 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+header {
+    height: 170px;
+}
+
+
+/* navbar menu*/
+
+nav {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0;
+    border-right: 3px solid;
+    height: 30px;
+    vertical-align: middle;
+}
+
+nav ul li:last-child {
+    padding: 0;
+    margin: 0;
+    border-right: none;
+}
+
+.active {
+    background-color: darkgrey;
+    height: 30px;
+    border-right: 5px solid;
+}
+
+footer {
+    padding: 5px;
+    background-color: rgb(144, 140, 151);
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+#logo-circulo {
+    height: 130px;
+    float: right;
+}
+
+.hd-logo h2 {
+    float: left;
+    padding-left: 0;
+    vertical-align: middle;
+    margin-top: 60px;
+}
+
+.hd-label label {
+    float: right;
+    padding-top: 60px;
+    padding-right: 15px;
+}
+
+.busqueda {
+    background-color: rgb(0, 174, 255);
+}

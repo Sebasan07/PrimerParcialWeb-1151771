@@ -1,25 +1,21 @@
-function cargarJson() {
+function cargarJsonNoticias() {
     var url = "http://demo6497253.mockable.io/noticias";
 
     fetch(url)
         .then(response => response.json())
-        .then(data => generarNoticias(data))
+        .then(data => generarNoticiasInicio(data))
         .catch(error => {});
 }
 
-function generarNoticias(json) {
-    const tabla = document.getElementById("tabla");
+function generarNoticiasInicio(json) {
+    const noticias = document.getElementById("noticias");
 
-    for (let i = 0; i < 25; i++) {
+    for (let i in json) {
 
-        tabla.innerHTML += `<tr> <td>${json[i].fecha_de_notificaci_n}</td>
-                        <td>${json[i].ciudad_municipio_nom}</td>
-                        <td>${json[i].recuperado}</td>
-                        <td>${json[i].edad}</td>
-                        <td>${json[i].sexo}</td>
-                        <td>${json[i].tipo_recuperacion}</td>
-                        <td>${json[i].estado}</td>
-                        <td>${json[i].ubicacion}</td>
-                        </td>`
+        noticias.innerHTML += `<div><h1>${json[i].titulo}- ${json[i].categoria} - ${json[i].fecha} </h1>
+                            <h3>${json[i].descripcion}</h3>
+                            <p>${json[i].detalle}</p>
+                            <img src='${json[i].img}'></img></div><hr>`
     }
 }
+cargarJsonNoticias();

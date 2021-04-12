@@ -6,6 +6,15 @@ h1 {
     height: 80px;
 }
 
+.info-contacto {
+    background-color: aliceblue;
+}
+
+.labels-info {
+    display: flex;
+    align-items: center;
+}
+
 footer div {
     width: 100%;
     background-color: darkgray;

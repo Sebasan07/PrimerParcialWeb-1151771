@@ -18,4 +18,5 @@ function generarNoticiasInicio(json) {
                             <img src='${json[i].img}'></img></div><hr>`
     }
 }
+
 cargarJsonNoticias();

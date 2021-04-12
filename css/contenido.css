@@ -1,3 +1,16 @@
 h1 {
     color: blue
 }
+
+#logo-circulo-footer {
+    height: 80px;
+}
+
+footer div {
+    width: 100%;
+    background-color: darkgray;
+}
+
+footer div p {
+    color: black;
+}

@@ -1,5 +1,5 @@
 function cargarJsonDeportes() {
-    var url = "http://demo6497253.mockable.io/categoria/deporte";
+    var url = "https://carlosreneas.github.io/endpoints/categoria_deporte.json";
 
     fetch(url)
         .then(response => response.json())
@@ -12,7 +12,7 @@ function generarDeportes(json) {
 
     for (let i in json) {
 
-        tabla.innerHTML += `<hr><tr>
+        tabla.innerHTML += `<tr>
                         <td>${json[i].titulo}</td>
                         </tr>`
     }

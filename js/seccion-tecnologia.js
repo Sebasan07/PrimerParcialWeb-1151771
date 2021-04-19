@@ -1,5 +1,5 @@
 function cargarJson() {
-    var url = "http://demo6497253.mockable.io/categoria/tecnologia";
+    var url = "https://carlosreneas.github.io/endpoints/categoria_tecnologia.json";
 
     fetch(url)
         .then(response => response.json())
@@ -10,10 +10,10 @@ function cargarJson() {
 function generarNoticias(json) {
     const tabla = document.getElementById("tabla-tecnologia");
 
-    for (let i = 0; i < 25; i++) {
+    for (let i in json) {
 
         console.log(json)
-        tabla.innerHTML += `<hr><tr>
+        tabla.innerHTML += `<tr>
                         <td>${json[i].titulo}</td>
                         </tr>`
     }
